@@ -1,0 +1,63 @@
+ion-content {
+  --background: #20232a; /* Cor de fundo Rocketseat */
+}
+
+.cronometro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.clock-frame {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 4px solid #6633cc; /* Cor da borda */
+  border-radius: 50%; /* Bordas arredondadas */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-section {
+  display: flex;
+  align-items: center;
+}
+
+.hours,
+.minutes,
+.seconds,
+.millis {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+  color: #6633cc;
+}
+
+.millis {
+  font-size: 0.8rem;
+}
+
+.dot {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.custom-button {
+  --background: #6633cc;
+  --color: white;
+  --border-radius: 10px;
+}
+
+.custom-button:hover {
+  --background: #5a2ea6;
+}
+
+.custom-button:active {
+  --background: #4c238b;
+}

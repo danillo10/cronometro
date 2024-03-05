@@ -1,0 +1,19 @@
+<ion-content class="ion-padding">
+  <div class="cronometro-container">
+    <div class="clock-frame">
+      <div class="time-section">
+        <span class="hours">{{ time.hours }}</span>
+        <span>:</span>
+        <span class="minutes">{{ time.minutes }}</span>
+        <span>:</span>
+        <span class="seconds">{{ time.seconds }}</span>
+      </div>
+      <div class="millis">{{ time.millis }}</div>
+    </div>
+    <div class="controls">
+      <ion-button *ngIf="!isRunning" class="custom-button" (click)="startTimer()">Iniciar</ion-button>
+      <ion-button *ngIf="isRunning" class="custom-button" (click)="pauseTimer()">Pausar</ion-button>
+      <ion-button class="custom-button" (click)="stopTimer()">Parar</ion-button>
+    </div>
+  </div>
+</ion-content>
